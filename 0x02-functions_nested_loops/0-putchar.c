@@ -1,22 +1,17 @@
 #include "main.h"
-
 /**
- * main - program that prints Holberton.
- *
- * Return: int
+ * main - prints the string "_putchar" from a character array.
+ * Return: 0 on success.
  */
-
 int main(void)
 {
-        int n = 0;
-        char str_greet[8] = "_putchar";
+	char c[] = "_putchar";
+	int i;
 
-        while (n < 8)
-        {
-                _putchar(str_greet[n]);
-                n += 1;
-        }
-        _putchar('\n');
-        return (0);
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(c[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
-
