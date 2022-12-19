@@ -1,35 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
 
-#define PASSWORD_LENGTH 8
-
 int main()
 {
-    /* Seed the random number generator with the current time */
-    srand(time(NULL));
+    int counter = 0;
+    srandom(time(NULL));
+    char randChar;
 
-    /* Create an array to store the password */
-    char password[PASSWORD_LENGTH + 1];
+    int  passwordLength;
 
-    /* Generate random characters for the password */
-    for (int i = 0; i < PASSWORD_LENGTH; i++)
+    printf("Type in a password Length \n");
+    scanf("%d", &passwordLength);
+
+    while(counter < passwordLength)
     {
-        password[i] = rand() % 26 + 'a';
+        randChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"[random () % 62];
+        printf("%c", randChar);
+        counter++;
     }
-
-    /* Terminate the password string*/
-    password[PASSWORD_LENGTH] = '\0';
-
-    /* Print the generated password*/
-    printf("Generated password: %s\n", password);
-
+    printf("\n");
     return 0;
 }
-
