@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
   * argstostr - convert the parameteres to string
   * @ac: the argument count
   * @av: the argument vector
   *
-  * Return: a pointer to a new string, or NULL if it fails and Returns NULL if ac == 0 or av == NULL
+  * Return: pointer to a new string, or NULL if fails, if ac == 0 or av == NULL
   */
 char *argstostr(int ac, char **av)
 {
