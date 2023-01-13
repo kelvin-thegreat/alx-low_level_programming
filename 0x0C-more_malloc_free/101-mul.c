@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * main - multiplies two numbers
- * @arg2: argument vector for values
- * @arg1: argument count
+ * @num2: argument vector for values
+ * @num1: argument count
  *
  * Return: Always 0 (Success)
  */
