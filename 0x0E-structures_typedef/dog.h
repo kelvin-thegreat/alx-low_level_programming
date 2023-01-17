@@ -1,10 +1,10 @@
 /**
- * struct dog - Struct dog 
+ * struct dog - Struct dog
+ *
  * @name: name of the dog
  * @age: The dog's age
  * @owner: owner of the dog
  *
- * Description: Longer description
  */
 struct dog
 {
