@@ -4,6 +4,7 @@
   * print_name - Prints name
   * @name: The name printed
   * @f: Pointer to function
+  * @*: locate any charcter
   *
   * Return: Nothing
   */
