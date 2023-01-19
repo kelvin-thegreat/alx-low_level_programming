@@ -2,9 +2,9 @@
 #include <stddef.h>
 
 /**
-  * print_name - Prototype function name to print name
+  * print_name - print name
   * @name: Name printed
-  * @f: Function's Pointer
+  * @f: Pointer of function print_nam
   *
   * Return: void or nothing
   */
