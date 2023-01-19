@@ -1,9 +1,8 @@
 #include "function_pointers.h"
-
 /**
   * int_index - searches for integer
-  * @size: number of elements in array
-  * @cmp: pointer to the function 
+  * @size: no of elements in array
+  * @cmp: pointer to function 
   * @array: array
   *
   * Return: ...
@@ -20,12 +19,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 			{
 				if (cmp(array[iterator]))
 					return (iterator);
-
 				iterator++;
 			}
 		}
 	}
-
 	return (-1);
 }
-
