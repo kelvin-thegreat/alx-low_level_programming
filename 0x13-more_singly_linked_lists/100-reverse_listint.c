@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * struct listint_s - singly linked list
- * @n: integer
+ * reverse_listint - singly linked list
+ * @head: ...
  * @next: points to the next node
- *
+ *listint_t:...
  * return: ...
  */
 
@@ -13,7 +13,6 @@ listint_t *reverse_listint(listint_t **head)
 {
 
 	listint_t *prev = NULL;
-    	/*listint_t *current = *head;*/
     	listint_t *next = NULL;
 	if (head)
 	{
@@ -28,6 +27,5 @@ listint_t *reverse_listint(listint_t **head)
     		return (*head);
 
 	}
-	return (NULL)
+	return (NULL);
 }
-
