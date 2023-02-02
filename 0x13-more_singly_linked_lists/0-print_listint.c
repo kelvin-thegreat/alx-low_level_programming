@@ -9,17 +9,16 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t count = 0; /* Keep track of number of nodes */
+	/* Keep track of number of nodes */
+	size_t count = 0;
 
-   	 /* Iterate through each node in the list */
+   	/* Iterate through each node in the list */
     	while (h != NULL)
    	{
         	/* Print the value of the current node */
         	printf("%d\n", h->n);
-
         	/* Move to the next node in the list */
        	 	h = h->next;
-
         	/* Increment the node count */
        	 	count++;
     	}
