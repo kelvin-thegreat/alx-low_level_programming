@@ -6,24 +6,28 @@
  * @n: integer
  * @next: points to the next node
  *
- * Description: singly linked list node structure
- * for Holberton project
+ * return: ...
  */
 
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *prev = NULL;
-    	listint_t *current = *head;
-    	listint_t *next = NULL;
 
-    	while (current != NULL)
-    	{
-        	next = current->next;
-        	current->next = prev;
-        	prev = current;
-        	current = next;
-    	}
-    	*head = prev;
-    	return *head;
+	listint_t *prev = NULL;
+    	/*listint_t *current = *head;*/
+    	listint_t *next = NULL;
+	if (head)
+	{
+    		while (*head)
+    		{
+        		next = *head;
+			*head = (*head)->next;
+        		next->next = prev;
+        		prev = next;
+    		}
+    		*head = prev;
+    		return (*head);
+
+	}
+	return (NULL)
 }
 
